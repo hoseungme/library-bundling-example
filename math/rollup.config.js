@@ -52,7 +52,7 @@ function buildDTS(format, input, output) {
         dir: output,
         entryFileNames: `[name].${isESM ? "d.mts" : "d.ts"}`,
         preserveModules: true,
-        preserveModulesRoot: 'src',
+        preserveModulesRoot: "src",
       },
     ],
     plugins: [dts()],
